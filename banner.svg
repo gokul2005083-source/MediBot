@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050810"/>
+      <stop offset="40%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#061220"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d3352"/>
+      <stop offset="100%" stop-color="#0a4a3a"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e6c8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00e6c8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00e6c8" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="bannerClip">
+      <rect x="0" y="0" width="900" height="300" rx="16" ry="16"/>
+    </clipPath>
+    <clipPath id="ecgClip">
+      <rect x="0" y="245" width="900" height="50"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" rx="16" ry="16" fill="url(#bgGrad)"/>
+
+  <!-- Grid -->
+  <g clip-path="url(#bannerClip)" opacity="0.035">
+    <line x1="0" y1="40"  x2="900" y2="40"  stroke="#00c8b4" stroke-width="1"/>
+    <line x1="0" y1="80"  x2="900" y2="80"  stroke="#00c8b4" stroke-width="1"/>
+    <line x1="0" y1="120" x2="900" y2="120" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="0" y1="160" x2="900" y2="160" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="0" y1="200" x2="900" y2="200" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="0" y1="240" x2="900" y2="240" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="0" y1="280" x2="900" y2="280" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="40"  y1="0" x2="40"  y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="80"  y1="0" x2="80"  y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="120" y1="0" x2="120" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="160" y1="0" x2="160" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="240" y1="0" x2="240" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="280" y1="0" x2="280" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="320" y1="0" x2="320" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="360" y1="0" x2="360" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="440" y1="0" x2="440" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="480" y1="0" x2="480" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="520" y1="0" x2="520" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="560" y1="0" x2="560" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="640" y1="0" x2="640" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="680" y1="0" x2="680" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="720" y1="0" x2="720" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="760" y1="0" x2="760" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="840" y1="0" x2="840" y2="300" stroke="#00c8b4" stroke-width="1"/>
+    <line x1="880" y1="0" x2="880" y2="300" stroke="#00c8b4" stroke-width="1"/>
+  </g>
+
+  <!-- Border -->
+  <rect x="0.5" y="0.5" width="899" height="299" rx="16" ry="16" fill="none" stroke="#1a3a5c" stroke-width="1"/>
+
+  <!-- Corner decorations -->
+  <polyline points="12,32 12,12 32,12"   fill="none" stroke="#00dcc0" stroke-width="1.5" opacity="0.5"/>
+  <polyline points="868,12 888,12 888,32" fill="none" stroke="#00dcc0" stroke-width="1.5" opacity="0.5"/>
+  <polyline points="12,268 12,288 32,288" fill="none" stroke="#00dcc0" stroke-width="1.5" opacity="0.5"/>
+  <polyline points="868,288 888,288 888,268" fill="none" stroke="#00dcc0" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Scanline -->
+  <rect x="0" y="0" width="900" height="2" fill="url(#scanGrad)" clip-path="url(#bannerClip)">
+    <animate attributeName="y" from="-2" to="302" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ECG scrolling -->
+  <g clip-path="url(#ecgClip)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0,0" to="-900,0" dur="4s" repeatCount="indefinite"/>
+      <polyline points="0,270 60,270 80,270 90,250 100,290 115,255 130,270 200,270 260,270 280,270 290,250 300,290 315,255 330,270 400,270 460,270 480,270 490,250 500,290 515,255 530,270 600,270 660,270 680,270 690,250 700,290 715,255 730,270 800,270 860,270 880,270 890,250 900,290 915,255 930,270 960,270 1060,270 1080,270 1090,250 1100,290 1115,255 1130,270 1200,270 1260,270 1280,270 1290,250 1300,290 1315,255 1330,270 1400,270 1460,270 1480,270 1490,250 1500,290 1515,255 1530,270 1600,270 1660,270 1680,270 1690,250 1700,290 1715,255 1730,270 1800,270"
+        fill="none" stroke="#00dcc0" stroke-width="1.5" stroke-opacity="0.25"/>
+    </g>
+  </g>
+
+  <!-- URL -->
+  <text x="450" y="22" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#00dcc0" opacity="0.35" letter-spacing="2">medibot7.netlify.app</text>
+
+  <!-- Pulse rings -->
+  <circle cx="88" cy="150" r="40" fill="none" stroke="#00dcb4" stroke-width="1.5">
+    <animate attributeName="r"       values="40;55;40" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="88" cy="150" r="40" fill="none" stroke="#00dcb4" stroke-width="1.5">
+    <animate attributeName="r"       values="40;62;40" dur="2.5s" begin="0.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0;0.5" dur="2.5s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="88" cy="150" r="40" fill="none" stroke="#00dcb4" stroke-width="1.5">
+    <animate attributeName="r"       values="40;68;40" dur="2.5s" begin="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0;0.3" dur="2.5s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Icon circle -->
+  <circle cx="88" cy="150" r="40" fill="url(#iconGrad)" stroke="#00dcb4" stroke-width="1.5" stroke-opacity="0.6"/>
+
+  <!-- Medical cross -->
+  <rect x="81" y="133" width="14" height="34" rx="2" fill="#00dcc0"/>
+  <rect x="71" y="143" width="34" height="14" rx="2" fill="#00dcc0"/>
+
+  <!-- Tag badge -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze"/>
+    <rect x="175" y="68" width="158" height="18" rx="3" fill="none" stroke="#00dcc0" stroke-opacity="0.3" stroke-width="1"/>
+    <circle cx="186" cy="77" r="3" fill="#00dcc0">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="194" y="81" font-family="'Courier New', monospace" font-size="9" fill="#00dcc0" letter-spacing="2">AI MEDICAL ASSISTANT</text>
+  </g>
+
+  <!-- Title MediBot -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.8s" fill="freeze"/>
+    <text x="175" y="147" font-family="Georgia, serif" font-size="54" font-weight="bold" fill="#ffffff" letter-spacing="-1">Medi</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.3s" fill="freeze"/>
+    <text x="308" y="147" font-family="Georgia, serif" font-size="54" font-weight="bold" fill="#00dcc0" letter-spacing="-1">Bot</text>
+  </g>
+
+  <!-- Underline -->
+  <rect x="308" y="151" height="2" rx="1" fill="#00dcc0">
+    <animate attributeName="width" values="0;84"  dur="1.5s" begin="0.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;1"  dur="0.3s" begin="0.5s" fill="freeze"/>
+  </rect>
+
+  <!-- Subtitle -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0.7" dur="1s" begin="0.5s" fill="freeze"/>
+    <text x="175" y="170" font-family="'Courier New', monospace" font-size="11.5" fill="#a0d2c8" letter-spacing="0.3">Your intelligent health companion — diagnose, learn &amp; get care faster</text>
+  </g>
+
+  <!-- Pill 1: AI Powered -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.8s" fill="freeze"/>
+    <rect x="175" y="186" width="86" height="22" rx="11" fill="#00dcc0" fill-opacity="0.06" stroke="#00dcc0" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="218" y="201" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#00dcc0" letter-spacing="0.3">AI Powered</text>
+  </g>
+
+  <!-- Pill 2: Symptom Check -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.0s" fill="freeze"/>
+    <rect x="268" y="186" width="106" height="22" rx="11" fill="#5ab4f0" fill-opacity="0.06" stroke="#5ab4f0" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="321" y="201" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#5ab4f0" letter-spacing="0.3">Symptom Check</text>
+  </g>
+
+  <!-- Pill 3: Drug Info -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.2s" fill="freeze"/>
+    <rect x="381" y="186" width="76" height="22" rx="11" fill="#7dd87d" fill-opacity="0.06" stroke="#7dd87d" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="419" y="201" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#7dd87d" letter-spacing="0.3">Drug Info</text>
+  </g>
+
+  <!-- Pill 4: Real-Time -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.4s" fill="freeze"/>
+    <rect x="464" y="186" width="74" height="22" rx="11" fill="#00dcc0" fill-opacity="0.06" stroke="#00dcc0" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="501" y="201" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#00dcc0" letter-spacing="0.3">Real-Time</text>
+  </g>
+
+  <!-- Stat card 1: Response Time -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.4s" fill="freeze"/>
+    <rect x="592" y="62" width="258" height="60" rx="8" fill="#00dcc0" fill-opacity="0.04" stroke="#00dcc0" stroke-opacity="0.15" stroke-width="1"/>
+    <text x="608" y="82" font-family="'Courier New', monospace" font-size="9" fill="#00dcc0" fill-opacity="0.5" letter-spacing="2">RESPONSE TIME</text>
+    <text x="608" y="107" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#00dcc0">0.3s</text>
+    <text x="660" y="107" font-family="'Courier New', monospace" font-size="9" fill="#a0d2c8" fill-opacity="0.5">  avg. per query</text>
+  </g>
+
+  <!-- Stat card 2: Accuracy -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.7s" fill="freeze"/>
+    <rect x="592" y="134" width="258" height="60" rx="8" fill="#00dcc0" fill-opacity="0.04" stroke="#00dcc0" stroke-opacity="0.15" stroke-width="1"/>
+    <text x="608" y="154" font-family="'Courier New', monospace" font-size="9" fill="#00dcc0" fill-opacity="0.5" letter-spacing="2">ACCURACY</text>
+    <text x="608" y="179" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#00dcc0">98.7%</text>
+    <text x="668" y="179" font-family="'Courier New', monospace" font-size="9" fill="#a0d2c8" fill-opacity="0.5">  medical precision</text>
+  </g>
+
+  <!-- Stat card 3: Status -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.0s" fill="freeze"/>
+    <rect x="592" y="206" width="258" height="60" rx="8" fill="#00dcc0" fill-opacity="0.04" stroke="#00dcc0" stroke-opacity="0.15" stroke-width="1"/>
+    <text x="608" y="226" font-family="'Courier New', monospace" font-size="9" fill="#00dcc0" fill-opacity="0.5" letter-spacing="2">STATUS</text>
+    <circle cx="608" cy="247" r="4" fill="#00dcc0">
+      <animate attributeName="opacity" values="1;0.15;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="620" y="251" font-family="'Courier New', monospace" font-size="20" font-weight="bold" fill="#00dcc0">LIVE</text>
+    <text x="672" y="251" font-family="'Courier New', monospace" font-size="9" fill="#a0d2c8" fill-opacity="0.5">  always available</text>
+  </g>
+
+  <!-- Floating particles -->
+  <circle cx="155" cy="55"  r="1.5" fill="#00dcc0" opacity="0.3"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s"   begin="0s"   repeatCount="indefinite"/></circle>
+  <circle cx="530" cy="40"  r="1"   fill="#00dcc0" opacity="0.2"><animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s"   begin="1s"   repeatCount="indefinite"/></circle>
+  <circle cx="240" cy="230" r="1.5" fill="#00dcc0" opacity="0.3"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="6s"   begin="2s"   repeatCount="indefinite"/></circle>
+  <circle cx="560" cy="220" r="1"   fill="#5ab4f0" opacity="0.3"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s"   begin="0.5s" repeatCount="indefinite"/></circle>
+  <circle cx="470" cy="60"  r="1.5" fill="#00dcc0" opacity="0.2"><animate attributeName="opacity" values="0.2;0.5;0.2" dur="7s"   begin="1.5s" repeatCount="indefinite"/></circle>
+  <circle cx="160" cy="200" r="1"   fill="#7dd87d" opacity="0.3"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.5s" begin="3s"   repeatCount="indefinite"/></circle>
+  <circle cx="550" cy="130" r="1.5" fill="#00dcc0" opacity="0.15"><animate attributeName="opacity" values="0.15;0.5;0.15" dur="5.5s" begin="2.5s" repeatCount="indefinite"/></circle>
+
+  <!-- Clickable link overlay -->
+  <a href="https://medibot7.netlify.app/" target="_blank">
+    <rect width="900" height="300" rx="16" ry="16" fill="transparent" cursor="pointer"/>
+  </a>
+</svg>
