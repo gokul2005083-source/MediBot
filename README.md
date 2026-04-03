@@ -3,7 +3,7 @@
 
 Offline AI Health Assistant (PWA)
 
-[![MediBot](./banner.svg)](https://medibot7.netlify.app/)
+[![MediBot](./banner.svg)](https://medi-bot7.netlify.app/)
 
 MediBot is a fully offline AI-powered health assistant built as a Progressive Web App. It runs entirely in the browser with no backend, no API, and no internet required after the first load.
 
